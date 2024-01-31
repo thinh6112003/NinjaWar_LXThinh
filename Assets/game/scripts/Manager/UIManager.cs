@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
+    [SerializeField] public GameObject panelGamePlay;
     public static UIManager instance;
     //public static UIManager Instance
     //{

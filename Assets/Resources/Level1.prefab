@@ -2268,6 +2268,7 @@ MonoBehaviour:
   anim: {fileID: 770394703359655222}
   healthBar: {fileID: 770394703925912883}
   CombatTextPrefab: {fileID: 5809522929158949346, guid: 7be9c5dfb5d868e4882f1f54740b6fc3, type: 3}
+  currentanimname: 
   attackRange: 2
   moveSpeed: 2.5
   rb: {fileID: 770394703111565468}

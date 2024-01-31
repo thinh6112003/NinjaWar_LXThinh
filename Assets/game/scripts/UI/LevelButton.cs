@@ -16,7 +16,8 @@ public class LevelButton : MonoBehaviour
             GameObject levelPrefab = Resources.Load<GameObject>($"Level{id}");
             Instantiate(levelPrefab);
             LevelManager.Instance.DestroyLevelManager();
-            
+            LevelManager.Instance.SpawnPlayer();
+            UIManager.instance.panelGamePlay.SetActive(true);
         });
     }
 }

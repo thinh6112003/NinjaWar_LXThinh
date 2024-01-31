@@ -36,7 +36,7 @@ public class Player : Character
             return;
         }
         isGrounded = CheckGrounded();
-        horizontal = Input.GetAxisRaw("Horizontal");
+        //horizontal = Input.GetAxisRaw("Horizontal");
         if (isAttack)
         {
             rb.velocity = Vector2.zero;

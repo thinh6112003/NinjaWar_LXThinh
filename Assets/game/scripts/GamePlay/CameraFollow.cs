@@ -9,9 +9,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform target;
     public Vector3 offset;
     public float speed;
-    void FixedUpdate()
+    private void LateUpdate()
     {
         transform.position = target.transform.position+ offset;
-        Debug.Log(transform.position);
     }
 }

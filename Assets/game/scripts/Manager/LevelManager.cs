@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Transform buttonsParent;
     [SerializeField] private LevelButton buttonPrefab;
     [SerializeField] private GameObject levelPanel;
+    [SerializeField] private GameObject canvasHealth;
+    [SerializeField] private Player player;
     public static LevelManager Instance;
     private void Awake()
     {
@@ -28,6 +30,11 @@ public class LevelManager : MonoBehaviour
             levelButton.name = $"Level {item.id}";
             levelButton.SetData(item.id);
         }
+    }
+    public void SpawnPlayer()
+    {
+        player.gameObject.SetActive(true);
+        canvasHealth.SetActive(true);
     }
     public void DestroyLevelManager()
     {
